@@ -27,6 +27,7 @@ public class App {
         }while (!isValid);
 
         System.out.println("\nThere were no errors found.");
+        sc.close();
 
     }
 
