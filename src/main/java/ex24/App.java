@@ -13,7 +13,7 @@ public class App
     {
         Scanner sc = new Scanner(System.in);
         String s1, s2;
-        Boolean anagram = false;
+        boolean anagram;
 
         System.out.println("Enter two strings and I'll tell you if they are anagrams:");
         System.out.print("Enter the first string: ");
@@ -25,9 +25,11 @@ public class App
         anagram = isAnagram(s1, s2);
 
         if(anagram)
-            System.out.println("\"" + s1.toString() + "\" and \"" + s2.toString() + "\" are anagrams.");
+            System.out.println("\"" + s1 + "\" and \"" + s2 + "\" are anagrams.");
         else
             System.out.println("The two string were not anagrams!");
+
+        sc.close();
     }
 
     public static Boolean isAnagram(String str1, String str2)

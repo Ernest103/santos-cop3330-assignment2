@@ -24,10 +24,8 @@ public class App {
             numMonths = calc.calculateMonthsUntilPaidOff(balance, APR, monthPay);
             System.out.println("It will take you "+ numMonths +" months to pay off this card.\n");
 
+            sc.close();
+
         }
-
-
-
-
 
 }

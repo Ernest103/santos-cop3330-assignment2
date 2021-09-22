@@ -1,8 +1,8 @@
 package ex25;
 
-/**
- *  UCF COP3330 Fall 2021 Assignment 1 Solution
- *  Copyright 2021 Ernesto Santos
+/*
+   UCF COP3330 Fall 2021 Assignment 1 Solution
+   Copyright 2021 Ernesto Santos
  */
 
 import java.util.Scanner;
@@ -41,6 +41,8 @@ public class App {
         {
             System.out.println("The password " + password + " is " + output);
         }
+
+        sc.close();
     }
 
     public static int passwordValidator(String pw) {
