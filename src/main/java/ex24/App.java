@@ -1,6 +1,7 @@
 package ex24;
 
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -40,8 +41,8 @@ public class App
         if(str1.length() != str2.length())
             return false;
 
-        s1 = str1.toCharArray();
-        s2 = str2.toCharArray();
+        s1 = str1.toLowerCase(Locale.ROOT).toCharArray();
+        s2 = str2.toLowerCase(Locale.ROOT).toCharArray();
         Arrays.sort(s1);
         Arrays.sort(s2);
 
